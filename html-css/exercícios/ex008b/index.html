@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Code</h2>
+    <p>Para inserir um fragmento de código no texto com uma melhor visibilidade (letras monoespaçadas) devemos utilizar a tag &lt;code&gt;: <code>print("Hello World").</code></p>
+    <br>
+    <p>Para trabalhar com trechos de códigos mais extensos, podemos combinar as tags &lt;pre&gt; e &lt;code&gt;, para manter a identação original do código.</p>
+    <pre>
+        <code>
+    nota1 = int(input('Digite a primeira nota: '))
+    nota2 = int(input('Digite a segunda nota: '))
+
+    media = (nota1 + nota2) / 2
+    if media >= 7:
+        print('Aprovado')
+    else:
+        print('Reprovado')
+        </code>
+    </pre>
+    <h2>Citação</h2>
+    <p>Para adicionar citações no texto, utilizamos a tag &lt;q&gt;.</p>
+    <p>Como dizia o Filósofo Piton 🐍, que teve como discípulo nada mais, nada menos que Karl Marx: <q> Tudo na vida depende do quanto você quer amar alguém</q>.</p>
+    <h3>Também existe a tag &lt;blockquote&gt;, que é usada para fazer uma citação completa. Sendo possível também adicionar o parametro "cite" para referenciar a url da citação.</h3>
+    <blockquote cite="https://www.pensador.com/frase/MjA2NzcyMw/">
+        Tudo na vida depende do quanto você quer amar alguém você trabalha, para amar alguém, você estuda para amar alguém...
+    </blockquote>
+    <h2>Abreviações e Siglas</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language"> HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto invertido</h2>
+    <p>Talvez uma das tags mais inúteis da HTML, a &lt;bdo&gt; permite escrever textos invertidos:</p>
+    <p><bdo dir="rtl">textos invertidos</bdo></p>
+</body>
+</html>

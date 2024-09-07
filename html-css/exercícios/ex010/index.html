@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1>O que são Hyperlinks?</h1>
+    <p>Hiperlinks, ou simplesmente links, são referências em documentos digitais que permitem a navegação de uma página para outra ou de uma seção para outra dentro do mesmo documento. Eles são uma parte fundamental da navegação na web, permitindo que usuários cliquem em textos, imagens ou outros elementos para acessar informações adicionais.</p>
+
+    <p>Devemos utilizar a tag &lt;a&gt; e inserir a url destino dentro do atributo "href".</p>
+    <a href="https://github.com/augusto1jr">Esse é o meu github</a>
+
+    <h2>Hreflang</h2>
+    <p>O atributo "hreflang" serve para indicar qual é o idioma principal do site para onde o link direciona.</p>
+
+    <h2>Target</h2>
+    <p>O atributo target serve para definir se ao clicar no link, a página será aberta na mesma janela ou em uma nova.</p>
+
+    <ul>
+        <li>_blank: abre o link em uma nova janela em branco;</li>
+        <li>_self: abre o link na janela atual;</li>
+        <li>_top e _parent: estão em desuso.</li>
+    </ul>
+
+    <a href="https://github.com/augusto1jr" target="_parent">Agora vai abrir em outra aba</a>
+
+    <h2>Rel</h2>
+    <p>O atributo "rel" serve para indicar qual é a natureza da url destino.</p>
+
+    <ul>
+        <li>next: indica que o link é a próxima parte do documento atual;</li>
+        <li>prev: indica que o link é a parte anterior do documento atual;</li>
+        <li>author: indica que o link direciona para o site do autor do documento atual;</li>
+        <li>external: indica que o link direciona para outro site que não faz parte do documento atual;</li>
+        <li>nofollow: indica que o link direciona para um site não endossado, como um link pago.</li>
+    </ul>
+
+    <a href="https://github.com/augusto1jr" target="_blank" rel="external"> Acessa meu site</a>
+    
+    <h2>Downloads</h2>
+    <p>Para fazer downloads utilizamos o atributo "href" para fazer o link diretamente ao arquivo que se deseja baixar, e o atribuito "type" para indicar ao navegador que tipo de arquivo está sendo baixado.</p>
+    <a href=""C:\Users\Augusto\Music\Quer Tomar Bomba.mp3"" download="Quer Tomar Bomba.mp3" type="audio/mp3"> Esse som quase sumiu da internet</a>
+</body>
+</html>
