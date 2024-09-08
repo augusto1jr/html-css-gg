@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1>O que são Hyperlinks?</h1>
+    <p>Hiperlinks, ou simplesmente links, são referências em documentos digitais que permitem a navegação de uma página para outra ou de uma seção para outra dentro do mesmo documento. Eles são uma parte fundamental da navegação na web, permitindo que usuários cliquem em textos, imagens ou outros elementos para acessar informações adicionais.</p>
+
+    <p>Devemos utilizar a tag &lt;a&gt; e inserir a url destino dentro do atributo "href".</p>
+    <a href="https://github.com/augusto1jr">Esse é o meu github</a>
+
+    <h2>Target</h2>
+    <p>O atributo target serve para definir se ao clicar no link, a página será aberta na mesma janela ou em uma nova.</p>
+
+    <ul>
+        <li>_blank: abre o link em uma nova janela em branco;</li>
+        <li>_self: abre o link na janela atual.</li>
+    </ul>
+
+    <a href="https://github.com/augusto1jr" target="_parent">Agora vai abrir em outra aba</a>
+
+    <h2>Rel</h2>
+    <p>O atributo "rel" serve para indicar qual é a natureza da url destino.</p>
+
+    <ul>
+        <li>next: indica que o link é a próxima parte do documento atual;</li>
+        <li>prev: indica que o link é a parte anterior do documento atual;</li>
+        <li>author: indica que o link direciona para o site do autor do documento atual;</li>
+        <li>external: indica que o link direciona para outro site que não faz parte do documento atual;</li>
+        <li>nofollow: indica que o link direciona para um site não endossado, como um link pago.</li>
+    </ul>
+
+    <a href="https://github.com/augusto1jr" target="_blank" rel="external"> Acessa meu site</a>
+    
+    <h2>Downloads</h2>
+    <a href=""C:\Users\Augusto\Music\Quer Tomar Bomba.mp3"" download="Quer Tomar Bomba.mp3" type="audio/mp3"> Esse som quase sumiu da internet</a>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Imagens dinâmicas em HTML são imagens cujo conteúdo ou atributos (como a fonte da imagem, tamanho ou estilo) podem ser alterados dinamicamente durante a execução de uma página web, sem a necessidade de recarregá-la.</p>
+
+    <h2>Source</h2>
+    <p>Utilizamos a tag &lt;source&gt; (source media type) para definir a largura limite, que se ultrapassado, irá substituir a imagem por outra que seja compatível com o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Áudio</h1>
+    <p>Para reproduzir um áudio em HTML5 devemos utilizar a tag &lt;audio&gt; em conjunto com os atributos "controls", "loop", "preload" e "autoplay".</p>
+
+    <audio preload="metadata" controls loop>
+        <source src="audios/testemunho.mp3" type="audio/mpeg">
+        <source src="" type="audio/ogg"> <!--Mesmo áudio em outro formato-->
+        <source src="" type="audio/wav"> <!--Mesmo áudio em outro formato-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+    </audio>
+
+    <h1>Vídeo</h1>
+
+    <h2>Vídeos em hospedagem própria</h2>
+    <p>Quando o vídeo está hospedado no próprio servidor.</p>
+    <p>Para reproduzir um vídeo em HTML5 devemos utilizar a tag &lt;video&gt; em conjunto com os atributos "controls", "loop", "poster" e "autoplay".</p>
+
+    <video width="240" height="420" poster="" controls>
+        <source src="videos/programador-frontend.MP4" type="video/mp4">
+        <source src="" type="video/mp4"> <!--Mesmo vídeo em outro formato-->
+        <source src="" type="video/webm"> <!--Mesmo vídeo em outro formato-->
+        <source src="" type="video/ogg"> <!--Mesmo vídeo em outro formato-->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <p><small>Assim como nas imagens, é importante se atentar para o trade-off entre qualidade do vídeo e velocidade de carregamento do site. Um software interessante para redimensionar ou converter os formatos de vídeo é o HandBrake.</small></p>
+
+    <p><small>Outro ponto importante é se atentar em disponibilizar os áudios e vídeos em mais de um formato, para oferecer compatibilidade com uma maior gama de navegadores.</small></p>
+
+    <h2>Vídeos hospedados externamentes</h2>
+    <p>Hospedar um vídeo internamente pode aumentar os custos de hospedagem. Para evitar esse problema, uma possível solução é utilizar uma hospedagem externa, como o YouTube ou o Vimeo.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lx0eir2xF5E?si=GPEzG8NEMJ77grfG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
