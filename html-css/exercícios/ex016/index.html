@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representação das Cores</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <h1>Representação das Cores</h1>
+    <h2>Por nomes</h2>
+    <p>Em HTML é possível representar as cores simplesmente através dos seus nomes:</p>
+    <p style="color: rebeccapurple;"><strong>Roxo</strong></p>
+
+    <h2>Por código hexadecimal</h2>
+    <p>A representação por código hexadecimal funciona através de 6 dígitos que podem assumir valores de 0 (menos significativo) à F (mais significativo). Cada par de dígitos representam a intensidade de uma da cores primárias (Azul, Vermelho e Verde).</p>
+    <p style="color: #ff4500;"> <strong>Laranja</strong></p>
+
+    <h2>Por código RGB</h2>
+    <p>O código RGB funciona de maneira semelhante ao código hexadecimal, porém, atribuindo um valor de 0 a 255 para cada cor primária.</p>
+    <p style="color: rgb(0, 100, 0);"> <strong>Verde</strong></p>
+
+    <h2>Por HSL</h2>
+    <p>A representação por HSL define as cores através dos parâmetros Matriz (<strong>H</strong>ue), Saturação (<strong>S</strong>aturation) e Luminosidade (<strong>L</strong>uminosity).</p>
+    <p style="color: hsl(210, 100%, 56%);"><strong>Azul</strong></p>
+
+    <h2>Opacidade ou Transparência</h2>
+    <p>Todas as formas de representação acima, além de serem capazes de representar as cores, também são capazes de representar a transparência, através do parâmetro <strong>Alpha</strong>.</p>
+    <p style="background-color: rgba(137, 43, 226, 0.301);">Teste de fundo com transparência.</p>
+</body>
+</html>
