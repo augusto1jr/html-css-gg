@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Old London';
+            src: url('fonts/OldLondon.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fonte Externa</h1>
+    <p>É possível importar fontes externas por meio de links através do '@import'. Para obter esses links podemos utilizar o Google Fonts.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatibus non recusandae nisi voluptatum iste veritatis fugiat architecto dolorum nemo in laborum saepe voluptas delectus unde, quas quos quo amet?</p>
+    <p>Também é possível utilizar fontes baixadas externamente através do '@font-face' referenciando o arquivo (.otf, .ttf, .aat, .svg). Para encontrar essas fontes, uma boa recomendação de site é o dafont.</p>
+    <p style="font-family: Old London;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique optio ipsam consectetur cupiditate a repudiandae voluptatum pariatur expedita non, est doloremque dolore labore, excepturi quidem libero fugit facilis quis?</p>
+
+    <h2>Como encontrar fontes?</h2>
+    <p>Além do uso de sites como o Google Fonts e o DaFont, outras ferramentas bem-vindas para identificar outras fontes usadas na internet são o Fonts-Ninja (em texto) e WhatFontIs, FontSquirrel e MyFonts (em imagens).</p>
+</body>
+</html>
