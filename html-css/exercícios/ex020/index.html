@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        div{text-align: center;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            border-radius: 12px;
+            background-color: rgba(105, 90, 205, 0.199);
+        }
+
+        div > p{
+            display: none;
+            font-size: 0.75em;
+        }
+
+        div:hover > p{
+            display: block;
+        }
+
+        div:hover{
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <p>É uma palavra-chave adicionada a um seletor que especifica um estado especial do elemento selecionado. Por exemplo, a pseudoclasse <strong>:hover</strong> pode ser usada para alterar a cor de um botão quando o usuário passa o cursor sobre ele.</p>
+
+    <div id="html">HTML
+        <p>Conteúdo</p>
+    </div>
+    <div id="css">CSS
+        <p>Estilo</p>
+    </div>
+    <div id="js">JavaScript
+        <p>Interatividade</p>
+    </div>
+
+    <p>Além disso, também é possível utilizar uma div para exibir elementos inicialmente "escondidos".</p>
+</body>
+</html>
