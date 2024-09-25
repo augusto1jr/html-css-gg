@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: rgba(105, 90, 205, 0.205);
+            height: 40px;
+            width: 275px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: slateblue;
+            padding: 5px;
+            margin: 3px;
+            outline: 3px;
+            outline-width: 3px;
+            outline-style: dashed;
+            outline-color: deeppink;
+            box-shadow: 2px 2px 4px 1px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelo de Caixas</h1>
+    <ul>
+        <li><strong>height:</strong> altura</li>
+        <li><strong>width:</strong> largura</li>
+        <li><strong>border:</strong> borda formada pelas linhas que circundam o conteúdo</li>
+        <li><strong>padding:</strong> espaçamento entre o conteúdo e a borda</li>
+        <li><strong>margin:</strong> espaçamento externo à borda</li>
+        <li><strong>outline:</strong> traçado da borda</li>
+        <li><strong>box-shadow:</strong> sombreamento de um elemento</li>
+    </ul>
+    <ul>
+        <li><strong>box-level:</strong> quebra a linha e isola o conteúdo a ser exibido (&lt;div&gt;);</li>
+        <li><strong>inline-level:</strong> exibe o conteúdo dentro da linha (&lt;span&gt;).</li>
+    </ul>
+
+    <p>Para usar shorthands ao configurar o <strong>border</strong>  ou <strong>outline</strong>, seguimos a ordem: <i>width -> style -> color</i></p>
+    <p>Já para configurar o <strong>padding</strong> ou <strong>margin</strong> com shorthands, utilizamos o sentido horário: <i>top -> right -> bottom -> left</i></p>
+    <p>Para configurar o <strong>sombreamento</strong> também utilizando shorthands, utilizamos a sequência: <i>distanciamento horizontal -> distanciamento vertical -> desfoque -> espalhamento</i></p>
+</body>
+</html>
