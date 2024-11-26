@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 200px;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 0.5px solid black;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em HTML</h1>
+    <p>Podemos utilizar os parâmetros "rowspan" e "colspan" para mesclar células e fazê-las ocuparem mais de uma linha ou coluna.</p>
+    <table>
+        <tr> <td rowspan="3">A1</td> <td colspan="2">B1</td> </tr>
+        <tr> <td>B2</td> <td>C2</td> </tr>
+        <tr> <td>B3</td> <td>C3</td> </tr>
+    </table>
+</body>
+</html>

@@ -12,14 +12,28 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative; /* Para que a tabela funcione com cabeçalho fixo*/
         }
 
-        table thead th {
+        table caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        table thead tr th {
             border: 0.5px solid black;
             text-align: center;
             vertical-align: middle;
             padding: 10px;
             background-color: slategray;
+            position: sticky;
+            top: -1;
+            background-color: slategray;
+        }
+
+        table tbody tr:nth-child(2n) {
+            background-color: lightblue;
         }
 
         table td {
@@ -35,10 +49,12 @@
     </style>
 </head>
 <body>
-    <h1>Top 3 Estados com Maior População</h1>
+    <h1>Tabelas em HTML</h1>
+    <p> É importante utilizar o atributo "scope" nas tags &lt;th&gt; para definir para os mecanismos de busca se ela se trata de uma coluna "col" ou linha "row".</p>
     <table>
+        <caption>Top 3 Estados com Maior População</caption>
         <thead>
-            <tr> <th>Estado</th> <th>População</th> <th>% do Total</th></tr>
+            <tr> <th scope="col">Estado</th> <th scope="col">População</th> <th scope="col">% do Total</th></tr>
         </thead>
 
         <tbody>
@@ -50,7 +66,16 @@
         <tfoot>
             <tr> <td>População Total:</td> <td>84 515 561</td> <td>~40%</td></tr>
         </tfoot>
-        
     </table>
+
+    <h2>Efeito Zebrado</h2>
+    <p>Para tabelas maiores, podemos utilizar o efeito zebrado para melhorar a visibilidade. Fazemos isso através da pseudoclasse "nth":</p>
+    <p><pre>table tbody tr:nth-child(2n)</pre></p>
+    <p>Podemos utilizar como parametro o número de colunas (2n, 3n, 4n...) ou os termos ímpar <i>(odd)</i> e par <i>(even)</i>.</p>
+    <p>Também pensando em tabelas maiores, podemos utilizar o parametro "sticky" com valor "-1" para manter o cabeçalho fixo no topo ao rolar a tela.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat architecto alias modi. Voluptatem placeat inventore, excepturi ducimus omnis in. Nihil debitis inventore ea placeat accusantium minima vitae iste cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nesciunt illo, ipsa, ab repudiandae assumenda in deleniti pariatur voluptate alias fugit tempore perspiciatis! Quas vitae atque eaque ex quaerat nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto tempora non, culpa dolores modi autem laboriosam accusamus ipsa porro est. Iste quis beatae ducimus consequuntur ipsa eum. Eum, temporibus nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti aliquam similique quod quisquam ipsam aspernatur consectetur perspiciatis aperiam voluptatem ex reiciendis, expedita ipsa rerum quam odio qui id laudantium voluptate.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat architecto alias modi. Voluptatem placeat inventore, excepturi ducimus omnis in. Nihil debitis inventore ea placeat accusantium minima vitae iste cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nesciunt illo, ipsa, ab repudiandae assumenda in deleniti pariatur voluptate alias fugit tempore perspiciatis! Quas vitae atque eaque ex quaerat nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto tempora non, culpa dolores modi autem laboriosam accusamus ipsa porro est. Iste quis beatae ducimus consequuntur ipsa eum. Eum, temporibus nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti aliquam similique quod quisquam ipsam aspernatur consectetur perspiciatis aperiam voluptatem ex reiciendis, expedita ipsa rerum quam odio qui id laudantium voluptate.</p>
 </body>
 </html>
