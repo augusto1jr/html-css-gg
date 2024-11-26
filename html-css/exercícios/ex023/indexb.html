@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela População</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        table thead th {
+            border: 0.5px solid black;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+            background-color: slategray;
+        }
+
+        table td {
+            border: 0.5px solid black;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+        }
+
+        table tfoot{
+            background-color: rgba(112, 128, 144, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Top 3 Estados com Maior População</h1>
+    <table>
+        <thead>
+            <tr> <th>Estado</th> <th>População</th> <th>% do Total</th></tr>
+        </thead>
+
+        <tbody>
+            <tr> <td>São Paulo</td> <td>45 973 190</td> <td>21,88%</td> </tr>
+            <tr> <td>Minas Gerais</td> <td>21 322 692</td> <td>10,11%</td> </tr>
+            <tr> <td>Rio de Janeiro</td> <td>17 219 679</td> <td>7,91%</td> </tr>
+        </tbody>
+
+        <tfoot>
+            <tr> <td>População Total:</td> <td>84 515 561</td> <td>~40%</td></tr>
+        </tfoot>
+        
+    </table>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 200px;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 0.5px solid black;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+        }
+
+        tr.cabecalho {
+            background-color: slategrey;
+        }
+
+        td.alerta {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando Tabelas em HTML</h1>
+    <p>Para criar tabelas utilizamos as tags &lt;table&gt; (tabela), &lt;tr&gt; (table row: linha) e &lt;td&gt; (table data: valor da coluna de uma linha).</p>
+    <table>
+        <tr class="cabecalho"> <td>A1</td> <td>B1</td> <td>C1</td> </tr>
+        <tr> <td>A2</td> <td>B2</td> <td>C2</td> </tr>
+        <tr> <td>A3</td> <td>B3</td> <td class="alerta">C3</td> </tr>
+    </table>
+    <p>Obs: Fechar as tags &lt;tr&gt; e &lt;td&gt; é opcional.</p>
+</body>
+</html>
