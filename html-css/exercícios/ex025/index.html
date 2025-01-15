@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="script.js" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="id_nome">Nome:</label>
+                <input type="text" name="nome" id="id_nome" autocomplete="username"
+                required minlength="3" maxlength="30" size="30" placeholder="Nome Completo">
+            </p>
+            <p>
+                <label for="id_email">Email:</label>
+                <input type="email" name="email" id="id_email" autocomplete="email"
+                required size="30" placeholder="exemplo@email.com">
+            </p>
+            <p>
+                <label for="id_phone">Telefone:</label>
+                <input type="tel" name="phone" id="id_phone" autocomplete="tel"
+                required size="27" placeholder="(99) 99999-9999"
+                pattern="^\(\d{2}\) \d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Dados sensíveis</legend>
+            <p>
+                <label for="id_nascimento">Data de Nascimento:</label>
+                <input type="date" name="nascimento" id="id_nascimento" autocomplete="bday"
+                value="2000-01-01">
+            </p>
+            <p>
+                <label for="id_hora">Hora de Nascimento:</label>
+                <input type="time" name="hora" id="id_hora"
+                value="00:00">
+            </p>
+            <p>
+                <label for="id_altura">Altura:</label>
+                <input type="number" name="altura" id="id_altura"
+                step="0.01" placeholder="Em Metros">
+            </p>
+            <p>
+                <label for="id_senha">Senha:</label>
+                <input type="password" name="senha" id="id_senha" autocomplete="current-password"
+                required minlength="8" maxlength="20" size="28" placeholder="Mínimo 8 Caracteres">
+            </p>
+            <p>
+                <label for="id_estado">Estado:</label>
+                <select name="estado" id="id_estado">
+                    <option value="PE" selected>---- Escolha ----</option>
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="CE">Ceará</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="id_profissao">Profissão:</label>
+                <input type="text" name="profissão" id="id_profissao" list="lista_profissao">
+                <datalist id="lista_profissao">
+                    <option value="Dev">Desenvolvedor</option>
+                    <option value="Adm">Gestor</option>
+                    <option value="Des">Designer</option>
+                </datalist>
+            </p>
+    
+            <p>
+                <label for="id_bio">Biografia:</label>
+                <br>
+                <textarea name="biografia" id="id_bio" cols="40" rows="10" 
+                placeholder="Fale sobre você."></textarea>
+            </p>
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="id_sexmasc">Masculino</label>
+            <input type="radio" name="sexo" id="id_sexmasc" value="M">
+            <br>
+            <label for="id_sexfem">Feminino</label>
+            <input type="radio" name="sexo" id="id_sexfem" value="F">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Linguagens Preferidas</legend>
+            <p>
+                <label for="id_python">Python</label>
+                <input type="checkbox" name="lang_python" id="id_python">
+            </p>
+            <p>
+                <label for="id_javascript">JavaScript</label>
+                <input type="checkbox" name="lang_js" id="id_javascript">
+            </p>
+            <p>
+                <label for="id_sql">SQL</label>
+                <input type="checkbox" name="lang_sql" id="id_sql">
+            </p>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Cor Preferida</legend>
+            <p>
+                <label for="id_cor">Cor:</label>
+                <input type="color" name="cor" id="id_cor" value="#ffffff">
+            </p>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Escolha uma Foto de Perfil:</legend>
+            <p>
+                <label for="id_foto">Foto:</label>
+                <input type="file" name="foto" id="id_foto">
+            </p>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Nível de satisfação</legend>
+            <p>
+                <label for="id_satisfacao">Cor:</label>
+                <input type="range" name="satisfacao" id="id_satisfacao" 
+                min="1" max="100" value="50">
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
