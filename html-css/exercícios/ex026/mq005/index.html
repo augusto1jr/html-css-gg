@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+<body>
+    <header>
+        <h1>Menu Responsivo</h1>
+        <span id="menu_icon" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menu_itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Título</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, doloribus harum velit voluptatum et molestias accusamus praesentium aut deserunt quis eligendi, exercitationem quam eos totam modi magnam, quos nisi ea. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo vel nostrum id harum soluta ut sint quis ipsum asperiores excepturi. Expedita nostrum necessitatibus cumque corporis maxime excepturi, ad quia culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet, ipsam facilis consequatur reiciendis mollitia magni quas accusamus odio, ullam deserunt ipsum officia. Temporibus quisquam ex earum modi totam enim?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, doloribus harum velit voluptatum et molestias accusamus praesentium aut deserunt quis eligendi, exercitationem quam eos totam modi magnam, quos nisi ea. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo vel nostrum id harum soluta ut sint quis ipsum asperiores excepturi. Expedita nostrum necessitatibus cumque corporis maxime excepturi, ad quia culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet, ipsam facilis consequatur reiciendis mollitia magni quas accusamus odio, ullam deserunt ipsum officia. Temporibus quisquam ex earum modi totam enim?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, doloribus harum velit voluptatum et molestias accusamus praesentium aut deserunt quis eligendi, exercitationem quam eos totam modi magnam, quos nisi ea. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo vel nostrum id harum soluta ut sint quis ipsum asperiores excepturi. Expedita nostrum necessitatibus cumque corporis maxime excepturi, ad quia culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet, ipsam facilis consequatur reiciendis mollitia magni quas accusamus odio, ullam deserunt ipsum officia. Temporibus quisquam ex earum modi totam enim?</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (menu_itens.style.display == 'block') {
+                menu_itens.style.display = 'none'
+            } 
+            else {
+                menu_itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
