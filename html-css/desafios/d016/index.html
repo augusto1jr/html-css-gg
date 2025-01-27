@@ -10,33 +10,36 @@
     <main>
         <section id="login">
             <div id="img">
-                
+                <!-- Adicione uma imagem, se necessário -->
             </div>
             <div id="form">
                 <h1>Login</h1>
-                <form action="login.js" method="post" autocomplete="on"></form>
+                <form action="login.js" method="post" autocomplete="on">
+                    <!-- Campo de Email -->
+                    <div id="email">
+                        <label for="id_email">Email:</label> <br>
+                        <input type="email" name="email" id="id_email" 
+                            autocomplete="email" required size="30" placeholder="exemplo@email.com">
+                    </div>
 
-                <div id="email">
-                    <p>Email:</p>
-                    <label for="id_email"></label>
-                    <input type="email" name="email" id="id_email" autocomplete="email"
-                    required size="30" placeholder="exemplo@email.com">
-                </div>
+                    <!-- Campo de Senha -->
+                    <div id="password">
+                        <label for="id_senha">Senha:</label> <br>
+                        <input type="password" name="senha" id="id_senha" 
+                            autocomplete="current-password" required minlength="8" maxlength="20" 
+                            size="30" placeholder="********">
+                    </div>
 
-                <div id="password">
-                    <p>Senha:</p>
-                    <label for="id_senha"></label>
-                    <input type="password" name="senha" id="id_senha" autocomplete="current-password"
-                    required required minlength="8" maxlength="20" size="30" placeholder="********">
-                </div>
+                    <!-- Botão de Login -->
+                    <div id="btn_login">
+                        <input type="submit" value="Login">
+                    </div>
 
-                <div id="btn_login">
-                    <input type="submit" value="Login">
-                </div>
-                    
-                <div id="btn_forgot">
-                    <input type="submit" value="Esqueceu a senha?">
-                </div>
+                    <!-- Link para Recuperar Senha -->
+                    <div id="btn_forgot">
+                        <a href="recuperar-senha.html">Esqueceu a senha?</a>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

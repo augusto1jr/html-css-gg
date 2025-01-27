@@ -1,14 +1,9 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: var(--fonte-padrao), Arial, Helvetica, sans-serif;
-}
-
-:root{
+/* Variáveis globais */
+:root {
     --cor0: #A3B3CA;
     --cor1: #848FA0;
     --cor2: #4D5D75;
@@ -18,39 +13,109 @@
     --fonte-padrao: "Poppins", Arial, Verdana, Helvetica, sans-serif;
 }
 
-html {
-    height: 100vh;
-    width: 100vw;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao), Arial, Helvetica, sans-serif;
 }
 
-body > main > section#login {
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
     background-color: var(--cor0);
     display: inline-block;
     margin: auto;
     border-radius: 8px;
     padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-body > main > section#login > div#form > h1 {
-    padding-bottom: 20px;
+#login h1 {
     text-align: center;
+    padding-bottom: 20px;
+    font-weight: 700;
+    color: var(--cor4);
 }
 
-body > main > section#login > div#form > div > p {
-    padding-bottom: 3px;
-}
-
-body > main > section#login > div#form > div > input {
+#login form > div {
     margin-bottom: 15px;
 }
 
-body > main > section#login > div#form > div#btn_login, div#btn_forgot {
-    text-align: center;
+#login input[type="email"],
+#login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor1);
+    border-radius: 6px;
+    background-color: white;
+    color: var(--cor4);
+    font-size: 14px;
 }
 
-body > main > section#login > div#form > div#btn_login > input, div#btn_forgot > input {
+#login input[type="email"]:focus,
+#login input[type="password"]:focus {
+    border-color: var(--cor2);
+    outline: none;
+}
+
+/* Botões */
+#login .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#btn_login {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#login #btn_login input {
     background-color: var(--cor2);
     color: white;
-    padding: 5px;
+    padding: 10px;
+    width: 80%;
     border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#login #btn_login input:hover {
+    background-color: var(--cor1);
+}
+
+#btn_forgot {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+#login #btn_forgot a {
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor4);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+#login #btn_forgot a:hover {
+    text-decoration: underline;
+    color: white;
 }
