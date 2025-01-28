@@ -73,23 +73,28 @@ html, body {
     padding: 10px;
     border: 1px solid var(--cor1);
     border-radius: 6px;
-    background-color: white;
     color: var(--cor4);
     font-size: 14px;
 }
 
 #login input[type="email"]:focus,
 #login input[type="password"]:focus {
-    border-color: var(--cor2);
+    border: 2px solid var(--cor2);
     outline: none;
 }
+
+button, input[type="submit"] {
+    all: unset; /* Reseta TODOS os estilos padrões */
+    border: 1px solid var(--cor3);
+    text-align: center;
+}
+
 
 /* Botões */
 #login .btn {
     display: inline-block;
     width: 100%;
     padding: 10px;
-    border: none;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
@@ -108,11 +113,11 @@ html, body {
     padding: 10px;
     width: 80%;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
 }
 
 #login #btn_login input:hover {
     background-color: var(--cor1);
+    cursor: pointer;
 }
 
 #btn_forgot {

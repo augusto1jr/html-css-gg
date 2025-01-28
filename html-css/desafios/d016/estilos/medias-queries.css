@@ -5,10 +5,11 @@
     html, body {
         background-image: linear-gradient(to bottom, var(--cor0), var(--cor3));
     }
-    
+
 
     #login {
         width: 80vw;
+        max-width: 600px;
         display: flex;
     }
 
