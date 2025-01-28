@@ -59,6 +59,14 @@ html, body {
     color: var(--cor4);
 }
 
+#login #person {
+    transform: translateY(4px);
+}
+
+#login #lock {
+    transform: translateY(3px);
+}
+
 #login #form {
     display: block;
 }
@@ -84,7 +92,7 @@ html, body {
 }
 
 button, input[type="submit"] {
-    all: unset; /* Reseta TODOS os estilos padrões */
+    all: unset; 
     border: 1px solid var(--cor3);
     text-align: center;
 }
