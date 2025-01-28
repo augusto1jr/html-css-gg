@@ -27,24 +27,40 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #a3b3ca3a;
 }
 
 #login {
     background-color: var(--cor0);
     display: inline-block;
     margin: auto;
-    border-radius: 8px;
+    overflow: hidden;
+    border-radius: 16px;
     padding: 20px;
-    max-width: 400px;
-    width: 100%;
+    width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#login #img {
+    background-image: url(../imgs/dumbbells.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    display: block;
+    height: 200px;
+    margin: -20px;
 }
 
 #login h1 {
     text-align: center;
     padding-bottom: 20px;
+    padding-top: 40px;
     font-weight: 700;
     color: var(--cor4);
+}
+
+#login #form {
+    display: block;
 }
 
 #login form > div {
@@ -117,5 +133,5 @@ html, body {
 
 #login #btn_forgot a:hover {
     text-decoration: underline;
-    color: white;
+    color: var(--cor2);
 }
