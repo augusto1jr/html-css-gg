@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div#item_A {
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 1;
+            /*Ou simplesmente:*/
+            flex: 0 1 150px
+        }
+
+        div#item_A {
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 0;
+            /*Ou simplesmente:*/
+            flex: 2 0 150px
+        }
+
+        div#item_A {
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 2;
+            /*Ou simplesmente:*/
+            flex: 1 2 150px
+        }
+
+        /*Outros valores comuns: 
+        flex: 0 1 auto (padrão)
+        flex: 0 0 auto (restrito, não cresce ou encolhe)
+        flex: 1 1 auto (flexível, cresce e encolhe*/
+        
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="item_A">A</div>
+        <div class="item" id="item_B">B</div>
+        <div class="item" id="item_C">C</div>
+    </div>
+</body>
+</html>
